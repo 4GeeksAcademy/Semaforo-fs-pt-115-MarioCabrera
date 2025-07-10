@@ -1,0 +1,21 @@
+.semaforo {
+  position: relative;
+  display: block; /* o block, según tu diseño */
+}
+
+.semaforo::before {
+  content: "";
+  position: absolute;
+  top: -320px; /* largo hacia arriba */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 320px;
+  background-color: black;
+}
+.contenedor {
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  height: 100vh;           /* alto de toda la pantalla */
+}
